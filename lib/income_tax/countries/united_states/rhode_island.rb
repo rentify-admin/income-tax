@@ -5,11 +5,9 @@ module IncomeTax
         register "Rhode Island", "RI"
 
         levels :single do
-          standard_deduction = 3800
-          level standard_deduction + 0,         "0.00%"
-          level standard_deduction + 59600,     "3.75%"
-          level standard_deduction + 135500,    "4.75%"
-          remainder                             "5.99%"
+          level 79900,     "3.75%"
+          level 181650,    "4.75%"
+          remainder        "5.99%"
         end
 
         levels :couple do

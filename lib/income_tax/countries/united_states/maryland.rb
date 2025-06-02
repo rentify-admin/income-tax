@@ -5,15 +5,13 @@ module IncomeTax
         register "Maryland", "MD"
 
         levels :single do
-          standard_deduction = 3200
-          level standard_deduction + 0,         "0.00%"
-          level standard_deduction + 1000,      "2%"
-          level standard_deduction + 2000,      "3%"
-          level standard_deduction + 3000,      "4%"
-          level standard_deduction + 100000,    "4.75%"
-          level standard_deduction + 125000,    "5%"
-          level standard_deduction + 150000,    "5.25%"
-          level standard_deduction + 250000,    "5.5%"
+          level  1000,      "2%"
+          level  2000,      "3%"
+          level  3000,      "4%"
+          level  100000,    "4.75%"
+          level  125000,    "5%"
+          level  150000,    "5.25%"
+          level  250000,    "5.5%"
           remainder                             "5.75%"
         end
 

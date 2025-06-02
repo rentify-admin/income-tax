@@ -5,13 +5,11 @@ module IncomeTax
         register "Arizona", "AZ"
 
         levels :single do
-          level 2000,  "0%"
-          level 6199,  "1%"
-          level 10299, "2.5%"
-          level 14399, "3.5%"
-          level 22699, "4.5%"
-          level 36599, "6%"
-          remainder    "7%"
+          level 10000,  "2.59%"
+          level 25000,  "2.88%"
+          level 50000, "3.36%"
+          level 150000, "4.24%"
+          remainder    "4.54%"
         end
 
         levels :couple do

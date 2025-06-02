@@ -5,15 +5,14 @@ module IncomeTax
         register "Oklahoma", "OK"
 
         levels :single do
-          standard_deduction = 1000
+          standard_deduction = 6350
           level standard_deduction + 0,         "0.00%"
-          level standard_deduction + 1000,      "0.5%"
-          level standard_deduction + 2500,      "1%"
-          level standard_deduction + 3750,      "2%"
-          level standard_deduction + 4900,      "3%"
-          level standard_deduction + 7200,      "4%"
-          level standard_deduction + 8700,      "5%"
-          remainder                             "5.25%"
+          level standard_deduction + 1000,      "0.25%"
+          level standard_deduction + 2500,      "0.75%"
+          level standard_deduction + 3750,      "1.75%"
+          level standard_deduction + 4900,      "2.75%"
+          level standard_deduction + 7200,      "3.75%"
+          remainder                             "4.75%"
         end
 
         levels :couple do

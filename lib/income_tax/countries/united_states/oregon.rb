@@ -6,12 +6,10 @@ module IncomeTax
         deduct_federal
 
         levels :single do
-          standard_deduction = 188
-          level standard_deduction + 0,         "0.00%"
-          level standard_deduction + 3300,      "5%"
-          level standard_deduction + 8250,      "7%"
-          level standard_deduction + 125000,    "9%"
-          remainder                             "9.9%"
+          level 4300,      "4.75%"
+          level 10750,     "6.75%"
+          level 125000,    "8.75%"
+          remainder        "9.9%"
         end
 
         levels :couple do

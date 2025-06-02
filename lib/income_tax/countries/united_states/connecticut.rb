@@ -5,14 +5,9 @@ module IncomeTax
         register "Connecticut", "CT"
 
         levels :single do
-          standard_deduction = 14000
-          level standard_deduction + 0,         "0.00%"
-          level standard_deduction + 10000,     "3.00%"
-          level standard_deduction + 50000,     "5.00%"
-          level standard_deduction + 100000,    "5.50%"
-          level standard_deduction + 200000,    "6.00%"
-          level standard_deduction + 250000,    "6.50%"
-          remainder                             "6.70%"
+          level  10000,     "3.00%"
+          level  500000,    "5.00%"
+          remainder         "6.50%"
         end
 
         levels :couple do
