@@ -5,11 +5,8 @@ module IncomeTax
         register "Mississippi", "MS"
 
         levels :single do
-          standard_deduction = 6000
-          level standard_deduction + 0,         "0.00%"
-          level standard_deduction + 5000,      "3%"
-          level standard_deduction + 10000,     "4%"
-          remainder                             "5%"
+          level 10001,     "0%"
+          remainder "4.7%"
         end
 
         levels :couple do

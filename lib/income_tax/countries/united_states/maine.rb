@@ -5,10 +5,9 @@ module IncomeTax
         register "Maine", "ME"
 
         levels :single do
-          standard_deduction = 3900
-          level standard_deduction + 5200,      "0.00%"
-          level standard_deduction + 20900,     "6.50%"
-          remainder                             "7.95%"
+          level 26800,     "5.80%"
+          level 63450,     "6.75%"
+          remainder "7.15%"
         end
 
         levels :couple do

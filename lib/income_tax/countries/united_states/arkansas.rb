@@ -5,12 +5,11 @@ module IncomeTax
         register "Arkansas", "AR"
 
         levels :single do
-          level 2000,  "0%"
-          level 6199,  "1%"
-          level 10299, "2.5%"
-          level 14399, "3.5%"
-          level 22699, "4.5%"
-          level 36599, "6%"
+          level 3900,  "1%"
+          level 7800,  "2.5%"
+          level 11700, "3.5%"
+          level 19600, "4.5%"
+          level 32600, "6%"
           remainder    "7%"
         end
 

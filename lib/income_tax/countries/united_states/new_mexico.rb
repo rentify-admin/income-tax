@@ -5,12 +5,12 @@ module IncomeTax
         register "New Mexico", "NM"
 
         levels :single do
-          standard_deduction = 3900
-          level standard_deduction + 0,         "0.00%"
-          level standard_deduction + 5500,      "1.7%"
-          level standard_deduction + 11000,     "3.2%"
-          level standard_deduction + 16000,     "4.7%"
-          remainder                             "4.9%"
+          level  5500,      "1.5%"
+          level  16500,     "3.2%"
+          level  33500,     "4.3%"
+          level  66500,     "4.7%"
+          level  210000,    "4.9%"
+          remainder         "5.9%"
         end
 
         levels :couple do

@@ -5,10 +5,8 @@ module IncomeTax
         register "Kansas", "KS"
 
         levels :single do
-          standard_deduction = 2250
-          level standard_deduction + 0,         "0.00%"
-          level standard_deduction + 15000,     "2.7%"
-          remainder                             "4.80%"
+          level 23000,     "5.2%"
+          remainder                             "5.58%"
         end
 
         levels :couple do

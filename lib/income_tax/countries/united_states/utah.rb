@@ -3,7 +3,7 @@ module IncomeTax
     class UnitedStates
       class Utah < State
         register "Utah", "UT"
-        flat_rate "5%"
+        flat_rate "4.55%"
       end
     end
   end

@@ -5,18 +5,14 @@ module IncomeTax
         register "California", "CA"
 
         levels :single do
-          standard_deduction = 3906
-          level standard_deduction + 0,       "0%"
-          level standard_deduction + 7582,    "1%"
-          level standard_deduction + 17976,   "2%"
-          level standard_deduction + 28371,   "4%"
-          level standard_deduction + 39384,   "6%"
-          level standard_deduction + 49774,   "8%"
-          level standard_deduction + 254250,  "9.3%"
-          level standard_deduction + 305100,  "10.3%"
-          level standard_deduction + 508500,  "11.3%"
-          level standard_deduction + 1000000, "12.3%"
-          remainder                           "13.3%"
+          level   7124,    "1%"
+          level   16890,   "2%"
+          level   26657,   "4%"
+          level   37005,   "6%"
+          level   46766,   "8.3%"
+          level   1000000, "9.3%"
+
+          remainder        "10.3%"
         end
 
         levels :couple do

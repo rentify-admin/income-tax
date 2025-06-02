@@ -3,7 +3,7 @@ module IncomeTax
     class UnitedStates
       class Illinois < State
         register "Illinois", "IL"
-        flat_rate "3.75%"
+        flat_rate "4.95%"
       end
     end
   end

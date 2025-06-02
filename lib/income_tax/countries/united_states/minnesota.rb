@@ -5,11 +5,9 @@ module IncomeTax
         register "Minnesota", "MN"
 
         levels :single do
-          standard_deduction = 3900
-          level standard_deduction + 0,         "0.00%"
-          level standard_deduction + 24680,     "5.35%"
-          level standard_deduction + 81080,     "7.05%"
-          level standard_deduction + 152540,    "7.85%"
+          level  32571,     "5.35%"
+          level  106991,     "6.80%"
+          level  198631,    "7.85%"
           remainder                             "9.85%"
         end
 

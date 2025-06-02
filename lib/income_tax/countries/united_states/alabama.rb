@@ -6,10 +6,9 @@ module IncomeTax
         deduct_federal
 
         levels :single do
-          level 2_500, "0%"
-          level 3_000, "2%"
-          level 5_500, "4%"
-          remainder    "5%"
+          level 500, "2%"
+          level 3000, "4%"
+          remainder    "6%"
         end
 
         levels :couple do
